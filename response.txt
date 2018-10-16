@@ -1,0 +1,731 @@
+{
+  "surveyId": 1,
+  "title": {
+    "en": "Survey",
+    "ar": "Survey"
+  },
+  "version": 1,
+  "screens": [
+    {
+      "screenNum": 1,
+      "screenTitle": {
+        "en": "About You",
+        "ar": "About You"
+      },
+      "questions": [
+        {
+          "questionId": 1,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "What Should we call you",
+            "ar": "What Should we call you"
+          },
+          "tagId": null,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 1,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 2,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "What is Your Age",
+            "ar": "What is Your Age"
+          },
+          "tagId": 1,
+          "questionType": "DATE",
+          "format": "dd/mm/yyyy",
+          "options": [
+            {
+              "optionId": 2,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 3,
+          "questionOrder": 3,
+          "questionTitle": {
+            "en": "Are you",
+            "ar": "Are you"
+          },
+          "tagId": 2,
+          "questionType": "RADIO",
+          "options": [
+            {
+              "optionId": 3,
+              "optionTitle": {
+                "en": "Male",
+                "ar": "Male"
+              },
+              "other": false
+            },
+            {
+              "optionId": 4,
+              "optionTitle": {
+                "en": "Female",
+                "ar": "Female"
+              },
+              "dependentQuestionId": 20,
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 4,
+          "questionOrder": 4,
+          "questionTitle": {
+            "en": "Your Nationality",
+            "ar": "Your Nationality"
+          },
+          "tagId": null,
+          "questionType": "DROP_DOWN",
+          "options": [
+            {
+              "optionId": 5,
+              "optionTitle": {
+                "en": "Pakistani",
+                "ar": "Pakistani"
+              },
+              "other": false
+            },
+            {
+              "optionId": 6,
+              "optionTitle": {
+                "en": "Qatri",
+                "ar": "Qatri"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        }
+      ]
+    },
+    {
+      "screenNum": 2,
+      "screenTitle": {
+        "en": "About your health",
+        "ar": "About your health"
+      },
+      "questions": [
+        {
+          "questionId": 5,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "Your Weight",
+            "ar": "Your Weight"
+          },
+          "tagId": 3,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 7,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 6,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "Your Height",
+            "ar": "Your Height"
+          },
+          "tagId": 5,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 8,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 7,
+          "questionOrder": 3,
+          "questionTitle": {
+            "en": "Do you smoke",
+            "ar": "Do you smoke"
+          },
+          "tagId": null,
+          "questionType": "TOGGLE",
+          "options": [
+            {
+              "optionId": 9,
+              "optionTitle": {
+                "en": "Yes",
+                "ar": "Yes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 10,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 8,
+          "questionOrder": 4,
+          "questionTitle": {
+            "en": "Are You aking any medication",
+            "ar": "Are You taking any medication"
+          },
+          "tagId": null,
+          "questionType": "TOGGLE",
+          "options": [
+            {
+              "optionId": 11,
+              "optionTitle": {
+                "en": "Yes",
+                "ar": "Yes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 12,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 9,
+          "questionOrder": 5,
+          "questionTitle": {
+            "en": "Do You have any of the following condition",
+            "ar": "Do You have any of the following condition"
+          },
+          "tagId": 8,
+          "questionType": "RADIO",
+          "options": [
+            {
+              "optionId": 13,
+              "optionTitle": {
+                "en": "I have type 1 diabetes",
+                "ar": "I have type 1 diabetes"
+              },
+              "dependentQuestionId": 12,
+              "other": false
+            },
+            {
+              "optionId": 14,
+              "optionTitle": {
+                "en": "I have type 2 diabetes",
+                "ar": "I have type 2 diabetes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 15,
+              "optionTitle": {
+                "en": "I have pregnancy related (gestational) diabetes",
+                "ar": "I have pregnancy related (gestational) diabetes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 16,
+              "optionTitle": {
+                "en": "I have pre-diabetes",
+                "ar": "I have pre-diabetes"
+              },
+              "dependentQuestionId": 14,
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        }
+      ]
+    },
+    {
+      "screenNum": 3,
+      "screenTitle": {
+        "en": "About your health",
+        "ar": "About your health"
+      },
+      "questions": [
+        {
+          "questionId": 10,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "When were you diagnosed with diabetes",
+            "ar": "When were you diagnosed with diabetes"
+          },
+          "tagId": null,
+          "questionType": "DATE",
+          "format": "mm/yyyy",
+          "options": [
+            {
+              "optionId": 17,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 11,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "What was your most recent HbA1c test result?",
+            "ar": "What was your most recent HbA1c test result?"
+          },
+          "tagId": 6,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 18,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 12,
+          "questionOrder": 5,
+          "questionTitle": {
+            "en": "When was your most recent HbA1c reading taken?",
+            "ar": "When was your most recent HbA1c reading taken?"
+          },
+          "tagId": null,
+          "questionType": "DATE",
+          "format": "mm/yyyy",
+          "options": [
+            {
+              "optionId": 19,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": true
+        },
+        {
+          "questionId": 13,
+          "questionOrder": 6,
+          "questionTitle": {
+            "en": "Do you have any of these diabetes related complications",
+            "ar": "Do you have any of these diabetes related complications"
+          },
+          "tagId": 7,
+          "questionType": "CHECK",
+          "options": [
+            {
+              "optionId": 20,
+              "optionTitle": {
+                "en": "Eye complications",
+                "ar": "Eye complications"
+              },
+              "other": false
+            },
+            {
+              "optionId": 21,
+              "optionTitle": {
+                "en": "Foot complications",
+                "ar": "Foot complications"
+              },
+              "other": false
+            },
+            {
+              "optionId": 22,
+              "optionTitle": {
+                "en": "No Complication",
+                "ar": "No Complication"
+              },
+              "other": false
+            },
+            {
+              "optionId": 23,
+              "optionTitle": {
+                "en": "Other:",
+                "ar": "Other:"
+              },
+              "other": true
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 14,
+          "questionOrder": 4,
+          "questionTitle": {
+            "en": "Do you have either of the these complications?",
+            "ar": "Do you have either of the these complications?"
+          },
+          "tagId": 7,
+          "questionType": "CHECK",
+          "options": [
+            {
+              "optionId": 24,
+              "optionTitle": {
+                "en": "High Cholesterol",
+                "ar": "High Cholesterol"
+              },
+              "other": false
+            },
+            {
+              "optionId": 25,
+              "optionTitle": {
+                "en": "High Blood Pressure",
+                "ar": "High Blood Pressure"
+              },
+              "other": false
+            },
+            {
+              "optionId": 26,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": true
+        },
+        {
+          "questionId": 15,
+          "questionOrder": 3,
+          "questionTitle": {
+            "en": "Are you currently on dialysis treatment",
+            "ar": "Are you currently on dialysis treatment"
+          },
+          "tagId": 7,
+          "questionType": "RADIO",
+          "options": [
+            {
+              "optionId": 27,
+              "optionTitle": {
+                "en": "Yes",
+                "ar": "Yes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 28,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        }
+      ]
+    },
+    {
+      "screenNum": 4,
+      "screenTitle": {
+        "en": "About your activity",
+        "ar": "About your activity"
+      },
+      "questions": [
+        {
+          "questionId": 16,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "How much physical activity do you usually get?",
+            "ar": "How much physical activity do you usually get?"
+          },
+          "tagId": 4,
+          "questionType": "RADIO",
+          "options": [
+            {
+              "optionId": 29,
+              "optionTitle": {
+                "en": "I rarely or never include physical activity in my day.",
+                "ar": "I rarely or never include physical activity in my day."
+              },
+              "other": false
+            },
+            {
+              "optionId": 30,
+              "optionTitle": {
+                "en": "I do light or moderate activity, such as walking, two to three times a week. 20 min",
+                "ar": "I do light or moderate activity, such as walking, two to three times a week. 20 min"
+              },
+              "other": false
+            },
+            {
+              "optionId": 31,
+              "optionTitle": {
+                "en": "I do at least 30 minutes of moderate physical activity on most days.",
+                "ar": "I do at least 30 minutes of moderate physical activity on most days."
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": false
+        },
+        {
+          "questionId": 17,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "Is there anything the prevents you from being physically active?",
+            "ar": "Is there anything the prevents you from being physically active?"
+          },
+          "tagId": null,
+          "questionType": "CHECK",
+          "options": [
+            {
+              "optionId": 32,
+              "optionTitle": {
+                "en": "have a physical condition",
+                "ar": "have a physical condition"
+              },
+              "dependentQuestionId": 18,
+              "other": false
+            },
+            {
+              "optionId": 33,
+              "optionTitle": {
+                "en": "No motivation or time",
+                "ar": "No motivation or time"
+              },
+              "dependentQuestionId": 19,
+              "other": false
+            },
+            {
+              "optionId": 34,
+              "optionTitle": {
+                "en": "Other",
+                "ar": "Other"
+              },
+              "other": true
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 19,
+          "questionOrder": 3,
+          "questionTitle": {
+            "en": "Have you been told by your doctor that you should not exercise?",
+            "ar": "Have you been told by your doctor that you should not exercise?"
+          },
+          "tagId": null,
+          "questionType": "TOGGLE",
+          "options": [
+            {
+              "optionId": 36,
+              "optionTitle": {
+                "en": "Yes",
+                "ar": "Yes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 37,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": true
+        }
+      ]
+    },
+    {
+      "screenNum": 5,
+      "screenTitle": {
+        "en": "About your physical condition",
+        "ar": "About your physical condition"
+      },
+      "questions": [
+        {
+          "questionId": 18,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "Please provide a brief description of your physical condition",
+            "ar": "Please provide a brief description of your physical condition"
+          },
+          "tagId": null,
+          "questionType": "TEXTAREA",
+          "options": [
+            {
+              "optionId": 35
+              "optionTitle": {
+                "en": "Test area",
+                "ar": "Test area"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": true
+        },
+        {
+          "questionId": 20,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "Are You Pregnany",
+            "ar": "Are You Pregnany"
+          },
+          "tagId": 9,
+          "questionType": "RADIO",
+          "options": [
+            {
+              "optionId": 38,
+              "optionTitle": {
+                "en": "Yes",
+                "ar": "Yes"
+              },
+              "other": false
+            },
+            {
+              "optionId": 39,
+              "optionTitle": {
+                "en": "No",
+                "ar": "No"
+              },
+              "other": false
+            }
+          ],
+          "mandatory": true,
+          "dependent": true
+        }
+      ]
+    },
+    {
+      "screenNum": 6,
+      "screenTitle": {
+        "en": "Make Droobi better",
+        "ar": "Make Droobi better"
+      },
+      "questions": [
+        {
+          "questionId": 21,
+          "questionOrder": 1,
+          "questionTitle": {
+            "en": "What is your level of Education?",
+            "ar": "What is your level of Education?"
+          },
+          "tagId": null,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 40,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 22,
+          "questionOrder": 2,
+          "questionTitle": {
+            "en": "What is your Employment Status?",
+            "ar": "What is your Employment Status?"
+          },
+          "tagId": null,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 41,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        },
+        {
+          "questionId": 23,
+          "questionOrder": 3,
+          "questionTitle": {
+            "en": "What is your Maritial Status?",
+            "ar": "What is your Maritial Status?"
+          },
+          "tagId": null,
+          "questionType": "TEXT",
+          "options": [
+            {
+              "optionId": 42,
+              "optionTitle": {
+                "en": "",
+                "ar": ""
+              },
+              "other": false
+            }
+          ],
+          "mandatory": false,
+          "dependent": false
+        }
+      ]
+    }
+  ],
+  "surveyLanguage": "ENGLISH_ONLY"
+}

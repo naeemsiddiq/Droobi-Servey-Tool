@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>C01747A0-DB61-4FEE-A1E2-DC463B09B0FA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Quran-player-mobile-expanded" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-76.000000, -596.000000)">
+        <g id="Group-31" transform="translate(0.000000, 570.000000)">
+            <g id="play-button-(2)" transform="translate(78.000000, 28.000000)">
+                <g id="Group-20" transform="translate(0.000000, 0.000000)">
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="4" cx="18.5" cy="18.5" r="18.5"></circle>
+                    <path d="M14.5511811,11 C13.4466116,11 12.5511811,11.8954305 12.5511811,13 L12.5511811,25 C12.5511811,26.1045695 13.4466116,27 14.5511811,27 C15.6557506,27 16.5511811,26.1045695 16.5511811,25 L16.5511811,13 C16.5511811,11.8954305 15.6557506,11 14.5511811,11 M24.5511811,13 L24.5511811,25 C24.5511811,26.1045695 23.6557506,27 22.5511811,27 C21.4466116,27 20.5511811,26.1045695 20.5511811,25 L20.5511811,13 C20.5511811,11.8954305 21.4466116,11 22.5511811,11 C23.6557506,11 24.5511811,11.8954305 24.5511811,13" id="pause-[#1006]" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

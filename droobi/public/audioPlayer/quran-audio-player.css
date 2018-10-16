@@ -1,0 +1,584 @@
+.audio-player {
+  width: 275px;
+  height: 272px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.minimize-btn {
+  display: none;
+}
+
+.player-label {
+  padding-top: 17px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #323637;
+}
+
+.player-controls {
+  padding-top: 40px;
+  padding-left: 19%;
+}
+
+.player-previous {
+  float: left;
+  margin-top: 8px;
+  margin-right: 20%;
+  cursor: pointer;
+}
+
+.icon-previous {
+  background-image: url(images/previous.svg);
+  fill: tomato;
+  stroke: black;
+}
+
+.previous-btn {
+  background: url(images/previous.svg) no-repeat;
+  width: 21px;
+  height: 22px;
+  object-fit: contain;
+  outline: none;
+}
+
+.player-play {
+  float: left;
+  margin-right: 20%;
+  cursor: pointer;
+}
+.play-btn {
+  background: url(images/play.svg) no-repeat;
+  width: 42px;
+  height: 41px;
+  object-fit: contain;
+  outline: none;
+}
+
+.pause-btn {
+  background: url(images/pause.svg) no-repeat;
+  width: 42px;
+  height: 41px;
+  object-fit: contain;
+  outline: none;
+}
+
+.player-next {
+  float: left;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.next-btn {
+  background: url(images/next.svg) no-repeat;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  outline: none;
+}
+
+.player-seeker {
+  margin-top: 17px;
+  margin-left: 23px;
+  float: left;
+  width: 200px;
+  height: 3px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.player-seeked {
+  float: left;
+  width: 0px;
+  height: 3px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.player-volume {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.player-volume:hover .volume-container {
+  display: block;
+}
+
+.volume-container {
+  z-index: 1;
+  position: absolute;
+  margin-left: 5px;
+  width: 120px;
+  margin-top: 18px;
+  height: 103px;
+  display: none;
+  cursor: pointer;
+}
+
+.volume-slider {
+  width: 100px;
+  height: 110px;
+  display: block;
+  margin-top: -5px;
+  margin-left: 7px;
+  position: absolute;
+  overflow: auto;
+  z-index: 1;
+}
+
+.volume-range {
+  transform: rotate(90deg);  
+  margin-top: 42px;
+  margin-left: -30px;
+  cursor: pointer;
+  width: 100px;
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* appearance: none; */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #323637;
+  cursor: pointer;
+}
+
+.volume-range::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #323637;
+  cursor: pointer;
+}
+
+/* .volume-slider {
+   display: none;
+  position: absolute;
+  transform: rotate(270deg);
+} */
+
+/* .player-volume:hover .volume-slider {
+  display: block;
+} */
+.player-timer {
+  float: left;
+  padding-left: 37%;
+}
+
+.player-current-time {
+  float: left;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #7b8488;
+}
+
+.player-total-time {
+  float: left;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #323637;
+}
+
+.surah-mobile {
+  display: none;
+}
+
+.surah-desktop {
+  display: block;
+}
+
+.player-surahs {
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  width: 255px;
+  height: 34px;
+  background-color: #f9f9f9;
+}
+
+.surah-label {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  float: left;
+  color: #7b8488;
+}
+
+.surah-dropdown {
+  padding-top: 1px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.surah-dropdown-btn {
+  font: inherit;
+  width: 134px;
+  margin-top: 1px;
+  margin-left: 20px;
+  height: 30px;
+  border: 0px;
+  background-color: #f9f9f9;
+  color: #515457;
+  letter-spacing: 2px;
+  float: left;
+  text-align: left;
+  outline: none;
+}
+
+.surah-dropdown-menu {
+  height: 200px;
+  display: none;
+  margin-top: 21%;
+  margin-left: 10%;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.surah-dropdown-btn span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.surah-dropdown-menu div {
+  letter-spacing: 3px;
+  color: #323637;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px #dad1d1 solid;
+  cursor: pointer;
+}
+
+.surah-dropdown-menu a:hover {
+  background-color: #dad1d1;
+}
+
+/* .surah-dropdown-menu option {
+  letter-spacing: 3px;
+} */
+
+/* .surah-dropdown-menu:hover {
+  color: black;
+}
+.surah-dropdown-menu:focus {
+  outline-width: 0px;
+} */
+
+.surah-option {
+  color: #7b8488;
+  text-transform: none;
+  height: 40px;
+  letter-spacing: 10pt;
+}
+
+.player-qaari {
+  margin-top: 6px;
+  margin-left: 10px;
+  float: left;
+  width: 255px;
+  height: 34px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #7b8488;
+
+  padding-top: 8.5px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  /* Media Query... */
+  .audio-player {
+    width: 100%;
+    height: 101px;
+    opacity: 0.95;
+    background-color: #323637;
+  }
+
+  .player-label {
+    display: none;
+  }
+
+  .player-controls {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 18px;
+  }
+
+  .player-previous {
+    float: left;
+    margin-top: 8px;
+    margin-right: 20%;
+    cursor: pointer;
+  }
+
+  .player-play {
+    float: left;
+    margin-right: 20%;
+    cursor: pointer;
+  }
+
+  .player-next {
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .play-btn {
+    background: url(images/play-mobile.svg) no-repeat;
+    width: 41px;
+    height: 40px;
+    object-fit: contain;
+    outline: none;
+  }
+  .pause-btn {
+    background: url(images/pause-mobile.svg) no-repeat;
+    width: 41px;
+    height: 40px;
+    object-fit: contain;
+    outline: none;
+  }
+  .next-btn {
+    background: url(images/next-mobile.svg) no-repeat;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    outline: none;
+  }
+  .previous-btn {
+    background: url(images/previous-mobile.svg) no-repeat;
+    width: 21px;
+    height: 22px;
+    object-fit: contain;
+    outline: none;
+  }
+
+  .player-seeker {
+    margin-top: 17px;
+    margin-left: 17px;
+    float: left;
+    width: 70%;
+    height: 3px;
+    background-color: #515457;
+  }
+
+  .player-seeked {
+    float: left;
+    width: 0px;
+    height: 3px;
+    background-color: #f9f9f9;
+  }
+
+  .player-volume {
+    display: none;
+  }
+
+  .player-timer {
+    float: left;
+    padding-left: 4px;
+    padding-top: 12px;
+    padding-right: 5px;
+  }
+
+  .player-current-time {
+    float: left;
+    font-family: Roboto;
+    font-size: 9px;
+    /* font-weight: 500; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    color: #7b8488;
+  }
+
+  .player-total-time {
+    font-family: Roboto;
+    font-size: 9px;
+    /* font-weight: 500; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    color: #f9f9f9;
+    text-align: right;
+  }
+
+  .surah-mobile {
+    display: block;
+  }
+
+  .surah-desktop {
+    display: none;
+  }
+
+  .player-surahs {
+    margin-top: 16px;
+    margin-left: 0px;
+    float: left;
+    width: 42%;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  .surah-label {
+    display: none;
+  }
+
+  .surah-dropdown {
+    padding-left: 0px;
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-align: left;
+  }
+
+  .surah-dropdown-btn {
+    font: inherit;
+    width: 134px;
+    margin-top: 1px;
+    margin-left: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: transparent;
+    color: #b3babd;
+    letter-spacing: 2px;
+    float: left;
+    text-align: left;
+    outline: none;
+  }
+
+  .surah-dropdown-menu {
+    display: none;
+    margin-top: 21%;
+    margin-left: 10%;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .surah-dropdown-btn span {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+
+  .surah-dropdown-menu div {
+    letter-spacing: 3px;
+    color: #323637;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px #dad1d1 solid;
+    cursor: pointer;
+  }
+
+  .surah-dropdown-menu a:hover {
+    background-color: #dad1d1;
+  }
+
+  .player-qaari {
+    margin-top: 0px;
+    margin-left: 13px;
+    float: left;
+    width: 42%;
+    height: 19px;
+    background-color: transparent;
+    text-align: left;
+    color: #b3babd;
+    padding-top: 2.5px;
+    font-family: Roboto;
+    font-size: 9px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  .minimize-btn {
+    display: block;
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-color: #3597bf;
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #eaeaea;
+    padding-left: 3px;
+  }
+
+  .player-controls-minimize {
+    float: none;
+    width: 100%;
+    padding-top: 5px;
+    margin-left: 15%;
+  }
+}

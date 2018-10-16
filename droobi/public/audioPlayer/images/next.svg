@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>F41F558E-E8B1-4E18-B670-1E009E02CA9C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="quran-player-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1334.000000, -513.000000)">
+        <g id="Group-54" transform="translate(1139.000000, 430.000000)" fill="#323637" fill-rule="nonzero">
+            <g id="play-next-button" transform="translate(195.944617, 83.935484)">
+                <path d="M0,23.8064516 L16.8255567,11.9032258 L0,0 L0,23.8064516 Z M19.7947725,0 L19.7947725,23.8064516 L23.753727,23.8064516 L23.753727,0 L19.7947725,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

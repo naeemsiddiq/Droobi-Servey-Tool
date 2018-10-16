@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+		<html>
+		<body>
+			<head>
+				<meta charset="utf-8">
+   				<meta http-equiv="x-ua-compatible" content="ie=edge">
+   				<title>droobi survey tool</title>
+		<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<!-- jQuery library -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<!-- Latest compiled JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<!-- <script type="text/javascript" src="C:/Users/Sakhi/Desktop/Droobi Survey/droobi/jquery.js"></script> -->
+			</head>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h2>Droobi Survey Form</h2>
+					</div>
+				</div>
+				<div class="row">
+						<table class="table">
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Username
+										<input type="text" value="patient@droobihealth.com" placeholder="username" id="username">
+									</td>
+									<td>Password
+										<input type="text" value="Admin123!" placeholder="password" id="password">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="submit" value="Submit" id="token">
+									</td>
+								</tr>
+							</tbody>
+						</table>			
+				</div>
+			</div>
+
+
+	<script type="text/javascript">
+
+		$("#token").click(function(e){
+			e.preventDefault();
+			console.log("Clicked");
+			
+			var username= $("#username").val();	
+			console.log("Username : " + username);
+
+			var password=$("#password").val();
+			console.log("Password : "+ password);
+
+			var url="http://chat.droobihealth.net:8180/auth/realms/droobi/protocol/openid-connect/token";
+			var params={"username":username,"password":password,"grant_type":"password","client_id":"droobi-public"};
+	
+			var success_function=function(data){
+				console.log("Success"); 
+				// console.log(data);
+				getQuestionsList(data);
+			} 
+			var error_function=function(data){
+				console.log("Failure");
+				console.log(data);
+			}
+
+			_postJson(url,params, success_function ,error_function);
+		});
+	
+
+
+	function _postJson(urlLink, params, fnSuccess, fnError) {
+		$.ajax({
+				type : "POST",
+				contentType : "application/x-www-form-urlencoded",
+				url : urlLink,
+				dataType : 'json',
+				data : params,
+				timeout : 100000,
+		success : function(data) {
+			if (fnSuccess) {
+				fnSuccess(data);
+			}
+		},
+		error : function(data) {
+			if (fnError) {
+			fnError(data);
+			}
+		},
+		done : function(e) {
+			}
+		});
+	}
+
+	const getQuestionsList = ({ access_token }) => {
+		console.log("Token : ",access_token);
+		$.ajax({
+		  url: "http://chat.droobihealth.net:8090/v1/api/patients/current/surveys",
+		  type: 'GET',
+		  headers: {
+		  	'Content-Type': 'application/json',
+		  	'authorization':`Bearer ${access_token}`
+		  }
+		});
+	}
+
+	</script>
+
+
+
+</body>
+</html>
